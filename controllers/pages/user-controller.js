@@ -1,8 +1,8 @@
 const bcrypt = require('bcryptjs')
-const { User, Restaurant, Favorite, Followship, Comment, Like } = require('../models')
-const { getUser } = require('../helpers/auth-helpers')
+const { User, Restaurant, Favorite, Followship, Comment, Like } = require('../../models')
+const { getUser } = require('../../helpers/auth-helpers')
 // const { localFileHandler } = require('../helpers/file-helpers')
-const { imgurFileHandler } = require('../helpers/file-helpers')
+const { imgurFileHandler } = require('../../helpers/file-helpers')
 
 const userController = {
   signUpPage: (req, res) => {

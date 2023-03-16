@@ -25,6 +25,7 @@ const adminServices = {
         image: filePath || null,
         categoryId
       }))
+      // 在前後分離的情況下，前端需要知道對後端請求後的結果，因此需要把新增的餐廳特別回傳出來。
       .then(newRestaurant => {
         cb(null, { restaurant: newRestaurant })
       })
